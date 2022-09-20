@@ -1,0 +1,232 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --family-big: 'Big Shoulders Display', cursive;
+    --family-lexend: "Lexend Deca", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+main{
+    background-color: var(--transparent-white);
+}
+
+.container {
+    margin: 1.2rem auto;
+    min-height: 92vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+
+
+.card1 {
+    background-color: var(--bright-orange);
+    padding:2rem 2.5rem;
+    flex: 1 1 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.card1 h2{
+    color:var(--transparent-white);
+    font-family: var(--family-big);
+    font-size: 2rem;
+
+}
+
+.card1 img{
+    margin:auto;
+}
+
+
+.card1 p{
+    color:var(--transparent-white);
+    font-family: var(--family-lexend);
+    margin: 1.3rem auto;
+    font-size:15px;
+}
+
+
+.card1 button{
+    border: white;
+    padding:0.6rem 1rem;
+    background: var(--transparent-white);
+    margin:0.8rem 0;
+    color: var(--bright-orange);
+    border-radius: 25px;
+    cursor:pointer;
+    border:1px solid var(--transparent-white);
+    text-align:center;
+}
+
+.card1 button:hover{
+    background-color: transparent;
+    color:var(--transparent-white);
+}
+
+.card2 {
+    background-color: var(--dark-cyan);
+    padding:2rem 2.5rem;
+    flex:1 1 0;
+    
+}
+
+.card2 h2{
+    color:var(--transparent-white);
+    font-family: var(--family-big);
+    font-size: 2rem;
+
+}
+
+.card2 img{
+    margin:auto;
+}
+
+
+.card2 p{
+    color:var(--transparent-white);
+    font-family: var(--family-lexend);
+    margin: 1.3rem auto;
+    font-size:15px;
+}
+
+
+.card2 button{
+    border: white;
+    padding:0.6rem 1rem;
+    background: var(--transparent-white);
+    margin:0.8rem 0;
+    color: var(--dark-cyan);
+    border-radius: 25px;
+    cursor:pointer;
+    border:1px solid var(--transparent-white);
+    text-align:center;
+}
+
+.card2 button:hover{
+    background-color: transparent;
+    color:var(--transparent-white);
+}
+
+.card3 {
+    background-color: var(--very-dark-cyan);
+    padding:2rem 2.5rem;
+    flex:1 1 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.card3 h2{
+    color:var(--transparent-white);
+    font-family: var(--family-big);
+    font-size: 2rem;
+
+}
+
+.card3 img{
+    margin:auto;
+}
+
+
+.card3 p{
+    color:var(--transparent-white);
+    font-family: var(--family-lexend);
+    margin: 1.3rem auto;
+    font-size:15px;
+}
+
+
+.card3 button{
+    border: white;
+    padding:0.6rem 1rem;
+    background: var(--transparent-white);
+    margin:0.8rem 0;
+    color: var(--very-dark-cyan);
+    border-radius: 25px;
+    cursor:pointer;
+    border:1px solid var(--transparent-white);
+    text-align:center;
+}
+
+.card3 button:hover{
+    background-color: transparent;
+    color:var(--transparent-white);
+}
+.card3 button:active{
+    background-color: transparent;
+    color:var(--transparent-white);
+}
+.card2 button:active{
+    background-color: transparent;
+    color:var(--transparent-white);
+}
+.card1 button:active{
+    background-color: transparent;
+    color:var(--transparent-white);
+}
+
+
+@media only screen and (min-height:760px){
+    .container{
+        display:flex;
+        flex-direction: row;
+        width:60vw;
+        align-items: center;
+        
+    }
+    .card1{
+        height:50vh;
+        
+    }
+    .card1 p{
+        font-size: 1.3rem;
+    }
+    .card1 h2{
+        font-size: 2.5rem;
+    }
+    .card2{
+        height:50vh;
+        
+    }
+    .card2 p{
+        font-size: 1.3rem;
+    }
+    .card2 h2{
+        font-size: 2.5rem;
+    }
+    
+    .card3{
+        height:50vh;
+    }
+    .card3 p{
+        font-size: 1.3rem;
+    }
+    .card3 h2{
+        font-size: 2.5rem;
+    }
+}
